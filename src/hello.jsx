@@ -3,13 +3,14 @@ import './hello.css'
 export default function Hello() {
   return (
     <div className='mobile'>
+      <form>
       <div style={{display:'flex'}}>
         {/*1*/}
         <div className='names'>
           <p>Name:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
       {/*2*/}
@@ -18,7 +19,7 @@ export default function Hello() {
           <p>Address:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
       {/*3*/}
@@ -27,7 +28,7 @@ export default function Hello() {
           <p>Mobile:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text'  required/>
         </div>
       </div>
       {/*4*/}
@@ -36,7 +37,7 @@ export default function Hello() {
           <p>Transport:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
       {/*5*/}
@@ -45,7 +46,7 @@ export default function Hello() {
           <p>Vechile:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required/>
         </div>
       </div>
       {/*6*/}
@@ -54,7 +55,7 @@ export default function Hello() {
           <p>Item Code:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required/>
         </div>
       </div>
       {/*7*/}
@@ -63,7 +64,7 @@ export default function Hello() {
           <p>Avabile Stock:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
       {/*8*/}
@@ -72,7 +73,7 @@ export default function Hello() {
           <p>Quatity:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
       {/*9*/}
@@ -81,7 +82,7 @@ export default function Hello() {
         <p>Item Name:</p>    
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
       {/*10*/}
@@ -90,7 +91,7 @@ export default function Hello() {
           <p>Avabile Stock:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text'required />
         </div>
       </div>
       {/*11*/}
@@ -99,7 +100,7 @@ export default function Hello() {
          <p>Unit Rate:</p> 
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
 
@@ -109,7 +110,7 @@ export default function Hello() {
         <p>DiscAmt:</p> 
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
 
@@ -119,9 +120,11 @@ export default function Hello() {
           <p>Weight:</p>
         </div>
         <div className='inputsright'>
-          <input className='inputs' type='text' />
+          <input className='inputs' type='text' required />
         </div>
       </div>
+      <input className='submit' type='submit'/>
+      </form>
     </div>
   )
 }
